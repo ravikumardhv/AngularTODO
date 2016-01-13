@@ -4,14 +4,14 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 import org.testng.ITestContext;
+import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.prokarma.update.UpdateTestCaseResult;
-import com.saucelabs.testng.SauceOnDemandTestListener;
 
-public class TestListener extends SauceOnDemandTestListener {
+public class TestListener implements ITestListener {
 
-/*	public void onFinish(ITestContext arg0) {
+	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
 		System.out.println("Test case finish ......................");
 	}
@@ -26,11 +26,10 @@ public class TestListener extends SauceOnDemandTestListener {
 	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
 		// TODO Auto-generated method stub
 
-	}*/
+	}
 
 	public void onTestFailure(ITestResult arg0) {
 		// TODO Auto-generated method stub
-		super.onTestFailure(arg0);
 		System.out.println("Test case failure ......................");
 		String workSpaceRefNumber=arg0.getTestClass().getXmlTest().getSuite().getParameter("workspaceRefNumber");
 		String projectRefNumber=arg0.getTestClass().getXmlTest().getSuite().getParameter("projectRefNumber");
@@ -39,7 +38,7 @@ public class TestListener extends SauceOnDemandTestListener {
 
 	}
 
-	/*public void onTestSkipped(ITestResult arg0) {
+	public void onTestSkipped(ITestResult arg0) {
 		// TODO Auto-generated method stub
 
 	}
@@ -48,10 +47,9 @@ public class TestListener extends SauceOnDemandTestListener {
 		// TODO Auto-generated method stub
 
 	}
-*/
+
 	public void onTestSuccess(ITestResult arg0) {
 		// TODO Auto-generated method stub
-		super.onTestSuccess(arg0);
 		System.out.println("Test case Pass ......................");
 		String workSpaceRefNumber=arg0.getTestClass().getXmlTest().getSuite().getParameter("workspaceRefNumber");
 		String projectRefNumber=arg0.getTestClass().getXmlTest().getSuite().getParameter("projectRefNumber");
