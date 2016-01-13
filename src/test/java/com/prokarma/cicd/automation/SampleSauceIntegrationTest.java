@@ -105,8 +105,8 @@ public class SampleSauceIntegrationTest implements SauceOnDemandSessionIdProvide
     public void webDriver(String browser, String version, String os,ITestContext context) throws Exception {
         WebDriver driver = createDriver(browser, version, os);
         System.out.println("SauceOnDemandSessionID="+getSessionId() +"job-name="+context.getName());
-        driver.get("http://192.168.13.19:8081/angular-spring-tutorial-1.1.0-SNAPSHOT");
-        assertEquals(driver.getTitle(), "AngularJS / Spring - Login");
+        driver.get("http://192.168.13.19:8081/CloudSoleAngular");
+        assertEquals(driver.getTitle(), "CloudSole Angular");
         driver.quit();
     }
 
