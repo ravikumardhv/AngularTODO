@@ -1,4 +1,4 @@
-http://10.134.253.85:8080/buildStatus/icon?job=angular-spring-tutorial
+http://192.168.13.19:8080/buildStatus/icon?job=angular-spring-tutorial
 
 CloudSole Angular
 ====================
