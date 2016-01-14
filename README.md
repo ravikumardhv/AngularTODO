@@ -1,4 +1,4 @@
-<a href='http://192.168.13.19:8080/job/angular-spring-tutorial/'><img src='http://192.168.13.19:8080/buildStatus/icon?job=angular-spring-tutorial'></a>
+[![Build Status](http://192.168.13.19:8080/buildStatus/icon?job=angular-spring-tutorial)](http://192.168.13.19:8080/job/angular-spring-tutorial/)
 
 CloudSole Angular
 ====================
