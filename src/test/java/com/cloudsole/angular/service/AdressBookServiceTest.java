@@ -18,7 +18,7 @@ public class AdressBookServiceTest {
 	        addressBook1.setPhone("12345678");
 		impl.createAddressBook(addressBook1);
 		
-		Assert.assertNull(impl.addressBooks);
+		Assert.assertNotNull(impl.addressBooks);
 		Assert.assertTrue(impl.addressBooks.size()==1);
 		
 	}
