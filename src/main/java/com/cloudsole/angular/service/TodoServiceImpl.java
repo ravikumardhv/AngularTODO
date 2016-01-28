@@ -18,8 +18,8 @@ public class TodoServiceImpl implements TodoService {
     @PostConstruct
     public void setupTodo(){
         todos.add("Write better code");
-       // todos.add("Learn AngularJs");
-       // todos.add("Watch star wars again!!!");
+       todos.add("Learn AngularJs");
+        todos.add("Watch star wars again!!!");
     }
 
     @Override
